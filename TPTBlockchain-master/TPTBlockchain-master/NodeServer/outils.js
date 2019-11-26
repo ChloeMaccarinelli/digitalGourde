@@ -33,7 +33,7 @@ exports.validJWTNeeded = (req, res, next) => {
   } else {
       return res.status(401).send();
   }
-}; 
+};
 
 exports.minimumPermissionLevelRequired = (required_permission_level) => {
   return (req, res, next) => {
@@ -94,9 +94,9 @@ exports.encryptAES = (text, ikey) => {
     let cipher = crypto.createCipheriv('aes-256-cbc', Buffer.from(ikey), iv);
     let encrypted = cipher.update(text);
     encrypted = Buffer.concat([encrypted, cipher.final()]);
-    return iv.toString('hex') + "$" + encrypted.toString('hex') 
+    return iv.toString('hex') + "$" + encrypted.toString('hex')
 };
-   
+
 exports.decryptAES = (text, ikey) => {
     let textFields = text.split('$');
     let iv = Buffer.from(textFields[0], 'hex');
@@ -118,6 +118,7 @@ exports.transaction = (req, res, openchainValCli) => {
     console.log("decryptedHDK : " + decryptedHDK);
     if(!req.body.memo) req.body.memo = "";
     console.log(req.body.memo);
+  console.log("etape1");
     const privateKey = bitcore.HDPrivateKey.fromString(decryptedHDK);
     const signer = new openchain.MutationSigner(privateKey);
     new openchain.TransactionBuilder(openchainValCli)
@@ -146,7 +147,7 @@ exports.transaction = (req, res, openchainValCli) => {
             if (result.statusCode != 200) {
                 try {
                     result.data = JSON.parse(result.body);
-                } catch (err) { }   
+                } catch (err) { }
                 return res.status(result.statusCode).send(result);
             } else {
                 const aResult = JSON.parse(result.body);
