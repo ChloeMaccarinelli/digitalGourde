@@ -1,0 +1,34 @@
+_______________________________
+ADMIN BRH
+_______________________________
+
+id : chloemaccarinelli@gmail.com
+
+mdp : blabla
+
+attention id portefeuille en dur dans le code  ::: id = 209 
+_______________________________
+ADMIN SOGEBANK
+_______________________________
+
+id : maccarinellichloe08@gmail.com
+
+mdp : blabla
+
+
+
+_______________________________
+PARTICULIERS
+_______________________________
+
+id : arnominator@hotmail.fr
+
+mdp : blabla
+
+_______________________________
+COMMERCANTS
+_______________________________
+
+id : maccarinellichloe@gmail.com
+
+mdp : blabla
