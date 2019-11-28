@@ -16,7 +16,7 @@ exports.handleValidationResult = (req, res, next) => {
       return res.status(422).json({ errors: errors.array() });
   next();
 }
-
+//l’utilisateur doit envoyer son token JWT (Json Web Token) valide avec la requête
 exports.validJWTNeeded = (req, res, next) => {
   if (req.headers['authorization']) {
       try {
@@ -34,6 +34,10 @@ exports.validJWTNeeded = (req, res, next) => {
       return res.status(401).send();
   }
 };
+// (config.permissionLevels.PUBLIC) - indique que tout utilisateur peut accéder à cette route
+//(config.permissionLevels.CLIENT) indique que l’utilisateur doit au moins avoir le niveau de permission Client pour accéder à cette route (ce sont des particuliers / commerçants vérifies, des banques et la BRH)
+//(config.permissionLevels.BANQUE) indique que l’utilisateur doit au moins avoir le niveau de permission Banque pour accéder à cette route (des banques et la BRH)
+//(config.permissionLevels.ADMIN) indique que l’utilisateur doit au moins avoir le niveau de permission Admin pour accéder à cette route (que la BRH)
 
 exports.minimumPermissionLevelRequired = (required_permission_level) => {
   return (req, res, next) => {
