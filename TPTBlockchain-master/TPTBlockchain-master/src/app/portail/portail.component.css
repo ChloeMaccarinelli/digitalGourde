@@ -15,7 +15,7 @@ a {
   display: flex;
   background-image: url(../../assets/accueil/bg-header.png);
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   background-size: cover;
 }
 
@@ -31,12 +31,22 @@ a {
   color: #171844;
   font-size: 38px;
 }
-
-.portal-header-bar {
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+.portal-header-bar mat-toolbar{
   background-color: #171844;
   font-size: 28px;
   color: #ffffff;
 }
+.portal-header-bar mat-toolbar mat-button-toggle{
+  background-color: #171844;
+
+  color: #ffffff;
+}
+
 
 .portal-header-bar p {
   margin: 0;
@@ -44,12 +54,19 @@ a {
   padding-left: 35px;
 }
 
+.mat-toolbar p {
+  font-family: acumin-pro-bold;
+  padding-left: 28px;
+  margin-top: 0;
+
+}
 .portal-body {
   margin-left: 80px;
   min-height: calc(100vh - 5%);
+
 }
 
-.portal-body h2 {
+.portal-body h1 {
   font-family: acumin-pro-bold;
   margin-bottom: 0;
 }
@@ -63,10 +80,14 @@ a {
   font-family: acumin-pro-bold;
   padding-left: 28px;
   margin-top: 0;
+
 }
 
 .portal-body .bank-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .lower-bank-buttons {

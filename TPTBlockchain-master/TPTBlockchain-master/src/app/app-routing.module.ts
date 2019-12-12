@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// Portal components
+// Portail components
 import { PortailComponent } from './portail/portail.component';
 
 // BRH components

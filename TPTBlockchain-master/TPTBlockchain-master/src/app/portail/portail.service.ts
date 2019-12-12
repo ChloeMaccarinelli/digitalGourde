@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
+
 export class PortailService {
 
   constructor() { }
@@ -23,4 +24,5 @@ getBankDetails() {
       {name: 'bnc', image: 'assets/logos/bnc_logo.png', url: 'bnc.com'}
     ];
   }
+
 }
