@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/TPTBlockchain-master/TPTBlockchain-master/dist" />
       <excludeFolder url="file://$MODULE_DIR$/TPTBlockchain-master/TPTBlockchain-master/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/TPTBlockchain-master/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/TPTBlockchain-master/tmp" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
