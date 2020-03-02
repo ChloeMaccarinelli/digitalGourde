@@ -1,0 +1,2 @@
+rootProject.name='DigitalGourdeMobile'
+include ':app'
