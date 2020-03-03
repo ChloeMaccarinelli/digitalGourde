@@ -1,4 +1,4 @@
-﻿# digitalGourde
+# digitalGourde
 TPT_Master2MBDS
 
 AUTEURS :
@@ -24,7 +24,8 @@ Environnement :
 
 Cloner le projet git et dézipper le dossier openchain-images-docker.zip
 
-Importer le fichier openchainuser.sql dans une bdd phpMyAdmin
+Importer le fichier openchainuser.sql dans une bdd phpMyAdmin 
+
 
 
 1.	Lancer le serveur node 
@@ -41,8 +42,10 @@ Le serveur node se lance sur le port 8086 : https://localhost:8086
     npm install
     npm start
           
-L’application se lance sur le port 4200 en local :  http://localhost:4200/portail (pour les particuliers commerçants)
-						     http://localhost:4200/brh/accueil (pour les institutions finançières et la BRH)
+L’application se lance sur le port 4200 en local :  
+      
+        http://localhost:4200/portail (pour les particuliers commerçants)
+        http://localhost:4200/brh/accueil (pour les institutions finançières et la BRH)
 
 3.	Lancer l’image docker de l’instance maître de openchain
 
@@ -74,6 +77,14 @@ Si tout fonctionne le serveur doit retourner :
     Openchain initialized: 26b2806b808f7bdb
 
 
+Si la connexion a un compte utilisateur renvoie une erreur SSL suivez la méthode suivante:
+
+      aller sur le locahost:8086/bienvenue
+      autoriser l'accès au site dangereux
+      clicker sur Revenir
+      
+      
+      
 
  
      
