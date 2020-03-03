@@ -41,7 +41,8 @@ Le serveur node se lance sur le port 8086 : https://localhost:8086
     npm install
     npm start
           
-L’application se lance sur le port 4200 en local :  http://localhost:4200/portail
+L’application se lance sur le port 4200 en local :  http://localhost:4200/portail (pour les particuliers commerçants)
+						     http://localhost:4200/brh/accueil (pour les institutions finançières et la BRH)
 
 3.	Lancer l’image docker de l’instance maître de openchain
 
