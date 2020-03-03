@@ -3,8 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/openchain-images-docker/openchain" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/openchain-images-docker/openchain-images-docker/openchain" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/openchain-images-docker/openchain-images-docker/openchain2" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/openchain-images-docker/openchain2" vcs="Git" />
   </component>
 </project>
