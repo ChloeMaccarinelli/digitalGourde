@@ -20,12 +20,17 @@ Environnement :
 	Docker
 	MySQL (avec xampp par exemple)
 		
+Etapes MySqL :
 
+   1. importer la BDD openchain.sql
+   2. editer les privilèges comme suit 
+
+    Utilisitateur : OpenchainUser
+    Nom d'hôte : localhost
+    Mot de Passe : OpenchainUserPassword13?
+    
 
 Cloner le projet git et dézipper le dossier openchain-images-docker.zip
-
-Importer le fichier openchainuser.sql dans une bdd phpMyAdmin (avoir Xampp de lancé)
-
 
 
 1.	Lancer le serveur node 
@@ -85,6 +90,13 @@ Si la connexion a un compte utilisateur renvoie une erreur SSL suivez la méthod
     autoriser l'accès au site dangereux
     clicker sur Revenir
       
+      
+      
+
+ 
+     
+
+
       
       
 
