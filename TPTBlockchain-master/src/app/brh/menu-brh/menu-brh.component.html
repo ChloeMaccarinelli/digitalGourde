@@ -1,23 +1,24 @@
-<div class="menu-content">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<nav class="menu-content">
     <img src="assets/accueil/brh_logo.png" alt="BRH logo" class="logo-img">
-    <hr>
-    <div class="user-info">
-      <button mat-button [matMenuTriggerFor]="disconectMenu">
-        Se déonnecter &nbsp;<i class="triangle-down"></i>
-      </button>
-        <mat-menu #disconectMenu="matMenu">
-          <button mat-menu-item (click)="disconnect()">Se déconnecter</button>
-        </mat-menu>
-    </div>
-    <hr>
-    <div class="menu-buttons">
-      <button mat-raised-button (click)="goToPortefeuillePrincipal()">Portefeuille BRH </button>
-      <button mat-raised-button (click)="goToDashboard()">Informations banques</button>
-      <button mat-raised-button (click)="goTohabilitation()"> Gérer les habilitations</button>
-      <button mat-raised-button (click)="goToportefeuille()">Gérer les portefeuilles</button>
-      <button mat-raised-button (click)="goToparametre()">Taux de change </button>
-      <button mat-raised-button (click)="goToreleve()">Gérer les relevés </button>
-      <button mat-raised-button (click)="goToparametres()">Gérer les paramètres  </button>
 
-    </div>
-  </div>
+  <mat-nav-list>
+
+    <a mat-list-item (click)="disconnect()"><i class="material-icons">exit_to_app</i>Déconnexion</a>
+
+  </mat-nav-list>
+    <hr>
+
+  <mat-nav-list>
+
+    <a mat-list-item (click)="goToPortefeuillePrincipal()"><i class="material-icons">home</i>Accueil</a>
+    <a mat-list-item (click)="goToDashboard()"><i class="material-icons">account_balance</i>Banques</a>
+    <a mat-list-item (click)="goTohabilitation()"><i class="material-icons">assignment_turned_in</i>Habilitations</a>
+    <a mat-list-item (click)="goToportefeuille()"><mat-icon>account_balance_wallet</mat-icon>Portefeuilles</a>
+    <a mat-list-item (click)="goToparametre()"><i class="material-icons">trending_up</i>Changes</a>
+    <a mat-list-item (click)="goToreleve()"> <i class="material-icons">folder_open</i>Relevés</a>
+    <a mat-list-item (click)="goToparametres()"><i class="material-icons">settings</i>Paramètres</a>
+
+  </mat-nav-list>
+  </nav>

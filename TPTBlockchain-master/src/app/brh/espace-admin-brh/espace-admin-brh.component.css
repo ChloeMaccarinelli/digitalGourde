@@ -1,6 +1,7 @@
 .espace-utilisateur {
     min-height: 100vh;
     font-family: roboto;
+  margin-left: 0px;
 }
 
 .sidenav-container {
@@ -17,13 +18,13 @@ mat-sidenav {
 }
 
 .sidenav {
-    height: 100vh;
-    width: 20%;
-    position: fixed;
+    height: 100%;
+    width: 15%;
+    position: relative;
 }
 
 .content {
     min-height: 100vh;
-    width: 80%;
-    margin-left: 20% !important; 
+    width: 100%;
+    margin-left: 0px;
 }
