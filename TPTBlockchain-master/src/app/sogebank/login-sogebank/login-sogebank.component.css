@@ -1,7 +1,7 @@
 .login-content {
   background-image: url(../../../assets/sogebank/sogebank_bg.jpg);
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   background-size: cover;
   min-height: 100vh;
 }
@@ -9,19 +9,21 @@
 img {
     margin-top: 5%;
     margin-left: 5%;
-    height: 100px;
+    height: 70px;
 }
 
 .form-container {
     background-color: rgba(255, 255, 255, 0.90);
-    width: 40%;
-    margin-left: 55%;
+    width: 100%;
+    position: center;
+
 }
 
 mat-tab-group {
     display: flex;
-    padding: 15px 80px;
+    padding: 10px ;
     flex-direction: column;
+  position: center;
 }
 
 .login-form {
