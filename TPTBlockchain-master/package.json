@@ -33,7 +33,7 @@
     "jspdf-autotable": "^3.2.10",
     "ng2-search-filter": "^0.4.7",
     "ngx-pagination": "^3.3.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "npm": "^5.6.0",
     "pagination": "^0.4.6",
     "protobufjs": "^6.8.8",
